@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Calculadora JS</title>
+
+  <script src="app.js"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+
+  <h1>Calculadora JS</h1>
+  <div class="calculator">
+    <!---------- PAINEL DE VISUALIZAÇÃO ------------>
+    <main class="view">
+      <ul>
+        <li id="apple-red"></li>
+        <li id="apple-yellow"></li>
+        <li id="apple-green"></li>
+      </ul>
+      <div id="visor" placeholder="0"></div>
+    </main>
+    <!---------- PAINEL DE BOTÕES ------------>
+    <div class="pannel-buttons">
+      <button id="clear" onclick="clean()">CE</button>
+      <button id="clear" style="width: 50%;" onclick="del()"><i class="fas fa-backspace"></i></button>
+      <button id="opera" onclick="insert('/')"><i class="fas fa-divide"></i></button>
+      <button onclick="insert('7')">7</button>
+      <button onclick="insert('8')">8</button>
+      <button onclick="insert('9')">9</button>
+      <button id="opera" onclick="insert('*')"><i class="fas fa-times"></i></button>
+      <button onclick="insert('4')">4</button>
+      <button onclick="insert('5')">5</button>
+      <button onclick="insert('6')">6</button>
+      <button id="opera" onclick="insert('-')">-</button>
+      <button onclick="insert('1')">1</button>
+      <button onclick="insert('2')">2</button>
+      <button onclick="insert('3')">3</button>
+      <button id="opera" onclick="insert('+')">+</button>  
+      <button style="border-bottom-left-radius: 5px;" id="opera" onclick="insert('.')">,</button>
+      <button onclick="insert('0')">0</button>
+      <button style="border-bottom-right-radius: 5px; width: 50%;" id="opera" onclick="calc()"><i class="fas fa-equals"></i></button>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
